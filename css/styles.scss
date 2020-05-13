@@ -5,10 +5,12 @@ $background-pale: #D1C4E9;
 
 // Height variables
 $carousel-item-height: 300px;
+
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
-	margin:0px auto;
-	padding: $pad-up-dn $pad-left-right;
+  margin:0px auto;
+  padding: $pad-up-dn $pad-left-right;
 }
+
 .row-header{
     @include zero-margin(0px,0px);
 }
@@ -51,6 +53,7 @@ body{
     border-bottom: 1px solid $lt-gray;
     padding: 10px;
 }
+
 .carousel {
     background:$background-dark;
 
@@ -65,9 +68,24 @@ body{
     }
 }
 
+.modal-content {
+    .modal-header {
+        background-color: $background-dark;
+    }
+    .modal-title, .close {
+        color: #fffaf0;
+    }
+    .modal-body {
+        background-color: $background-pale;
+    }
+}
+
 #carouselButton {
-    right:0px;
+    right:15px;
     position: absolute;
     bottom: 0px;
-    z-index: 1;
+}
+
+#loginModalOpen {
+    cursor: pointer;
 }
