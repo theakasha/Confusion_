@@ -16,7 +16,7 @@
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
-  "author": "Rishav Pandey",
+  "author": "Akash Aryan",
   "license": "ISC",
   "dependencies": {
     "bootstrap-social": "^5.1.1",
@@ -25,7 +25,9 @@
   },
   "devDependencies": {
     "bootstrap": "^4.0.0",
+    "browser-sync": "^2.23.6",
     "cssmin": "^0.4.3",
+    "del": "^3.0.0",
     "grunt": "^1.0.2",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-clean": "^1.1.0",
@@ -39,6 +41,9 @@
     "grunt-filerev": "^2.3.1",
     "grunt-sass": "^2.1.0",
     "grunt-usemin": "^3.1.1",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
     "htmlmin": "0.0.7",
     "jit-grunt": "^0.10.0",
     "jquery": "^3.3.1",
